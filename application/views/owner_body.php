@@ -14,20 +14,20 @@
             
             <center>
             <div id="main_body">
-                <form>
+                <form action="<?php echo base_url();?>admin/owner_insert" method="post">
                     <fieldset class="field_set">
-                        <table>
+                        <table><?php echo validation_errors(); ?>
+                            <tr><td>Shop Name :</td> <td>
+                                <?php echo $this->mck->shop();?>
+                                </td><td id="sname">shop name</td></tr>
                             <tr><td>Owner Name :</td> <td><input type="text" name="owner_name" class="form-control input-md"></td></tr>
                             <tr><td>Address :</td> <td><input type="text" name="address" class="form-control input-md"></td></tr>
                             <tr><td>Contact No. :</td> <td><input type="text" name="contact" class="form-control input-md"></td></tr>
-                            <tr><td>Complex Name :</td> <td><input type="text" name="complex_name" class="form-control input-md"></td></tr>
-                            <tr><td>Shop Name :</td> <td><input type="text" name="shop_name" class="form-control input-md"></td></tr>
-                            <tr><td>Allotment Date :</td> <td><input type="text" name="alloted_date" class="form-control input-md"></td></tr>
+                            <tr><td>Lease Issue Date :</td> <td><input type="date" name="issue_date" class="form-control input-md"></td></tr>
+                            <tr><td>Lease Close Date :</td> <td><input type="date" name="close_date" class="form-control input-md"></td></tr>
+                            <tr><td>Allotment Date :</td> <td><input type="date" name="alloted_date" class="form-control input-md"></td></tr>
                             <tr><td><input type="submit" value="Submit" class="btn btn-primary"></td> <td><input type="submit" value="reset" class="btn btn-primary"></td></tr>
-                       <div class="input-group"> <span class="input-group-addon"><i class="fa-user fa-fw"></i></span>
-                                                         <input id="Email" name="name" type="text" placeholder="Enter Your Email" class="form-control">
-        </div>
-                        </table>
+                                               </table>
                     </fieldset>
                 </form>
             </div>

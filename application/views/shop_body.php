@@ -1,28 +1,34 @@
 
             <h1><center>SHOP DETAIL</center></h1><hr/>
+            <?php echo validation_errors(); ?>
             <center>
             <div id="main_body">
-                <form>
+                <form action="<?php echo base_url();?>admin/shop_insert" method="post">
                     <fieldset class="field_set">
                         <table>
-                            <tr><td>Shop Name :</td> <td><input type="text" name="shop_name" class="form-control"></td></tr>
-                            <tr><td>Complex Name :</td> <td><input type="text" name="complex_nm" class="form-control"></td></tr>
-                            <tr><td>Size Of Shop :</td> <td><input type="text" name="shop_size" class="form-control"></td></tr>
-                            <tr><td>Type of shop :</td> <td><input type="text" name="shop_type" class="form-control"></td></tr>
-                            <tr><td>Class :</td> <td><input type="text" name="class" class="form-control"></td></tr>
-                            <tr><td>Premium Of Shop :</td> <td><input type="text" name="premium" class="form-control"></td></tr>
-                            <tr><td>Rent :</td> <td><input type="text" name="rent" class="form-control"></td></tr>
-                            <tr><td>Rent Date :</td> <td><input type="date" name="rent_date" class="form-control"></td></tr>
-                            <tr><td>Lease Issue Date :</td> <td><input type="date" name="lease_issue" class="form-control"></td></tr>
-                            <tr><td>Lease Close Date</td> <td><input type="date" name="lease_close" class="form-control"></td></tr>
-                            <tr><td><input type="submit" value="Submit" class="btn btn-primary"></td> <td><input type="submit" value="reset" class="btn btn-primary"></td></tr>
+                            <tr><td>Complex Name :</td> <td>
+                                <?php echo $this->mck->complex();?>
+                                </td><td id="cname">complex name</td></tr>
+                            <tr><td>Shop Name :</td> <td><input type="text" name="shop_name" class="form-control"></td><td></td></tr>
+                            <tr><td>Type of shop :</td> <td>
+                                    <select name="shop_type" id="shop_type">
+                                        <option >- Select -</option>
+                                        <option value="1">Shop</option>
+                                        <option value="2">Hall</option>
+                                        <option value="3">Canteen</option>
+                                        <option value="4">Louge</option>
+                                        <option value="5">Room</option>
+                                    </select>
+                                    </td><td id="shop_cal"> </td>
+                            <tr><td>Shop Size :</td> <td><input type="text" name="shop_size" class="form-control"></td><td></td></tr>
+                            <tr><td>Class :</td> <td><input type="text" name="shop_class" class="form-control"></td><td></td></tr>
+                            <tr><td>Premium Of Shop :</td> <td><input type="text" name="shop_premium" class="form-control"></td><td></td></tr>
+                            <tr><td>Rent :</td> <td><input type="text" name="shop_rent" class="form-control"></td><td></td></tr>
+                            
+                            <tr><td><input type="submit" value="Submit" class="btn btn-primary"></td> <td><input type="submit" value="reset" class="btn btn-primary"></td><td></td></tr>
                         </table>
                     </fieldset>
-                        <input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime">
-     
-    <script type="text/javascript">
-    $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
-    </script> 
+         
                 </form>
             </div>
             </center>

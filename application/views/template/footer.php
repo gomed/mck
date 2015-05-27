@@ -1,12 +1,12 @@
         <div id="footer">
            <center>
             <address>
-                &copy; Written by <a href="http://alokgabel.net">Alok Kumar</a>.<br> 
-                Visit us at: www.alokgabel.net<br>
-                Korba, Chhattisgarh<br>
-                India
+               developed by : <a href=""> Alok & Gomed</a>.<br> 
+                
             </address>
  </center>
+           
+           <input type="hidden" name="url" id="base_url" value="<?php echo base_url();?>">
         </div>
     </body>
 </html>
