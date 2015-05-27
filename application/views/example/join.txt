@@ -1,4 +1,0 @@
-select *from complex 
-left join zone on zone.id = complex.z_id
-left join shop on shop.c_id = complex.id
-where complex.id = 1 and shop.s_type ='hall'

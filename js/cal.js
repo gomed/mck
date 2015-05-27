@@ -2,20 +2,19 @@
 
 function add()
 {
-    var a = parseInt($("#shop").val());
-    var b = parseInt($("#hall").val());
-    var c = parseInt($("#room").val());
-    var d = parseInt($("#canteen").val());
-    var e = parseInt($("#lauge").val());
-    var f = a+b+c+d+e;
-    $("#total").val(f);
+    var a = parseInt($("#hall").val());
+    var b = parseInt($("#room").val());
+    var c = parseInt($("#canteen").val());
+    var d = parseInt($("#lauge").val());
+    var e = a+b+c+d;
+    $("#total").val(e);
 }
 function sub()
 {
-    var g = parseInt($("#total").val())- parseInt($("#alloted").val());
+    var f = parseInt($("#total").val())- parseInt($("#alloted").val());
     
     
-    $("#unalloted").val(g);
+    $("#unalloted").val(f);
 }
 
 // validation codes 
@@ -31,12 +30,3 @@ function err()
    }
     
 }
-function add_rent()
-{
-    var a = parseInt($("#cash").val());
-    var b = parseInt($("#late_fee").val());
-    var c = a+b;
-    $("#total").val(c);
-}
-
-

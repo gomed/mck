@@ -30,11 +30,10 @@
         </nav>
         
         <h1>COMPLEX INFO.</h1>
-        Complex ID<input type="text" name="c_id">
-        Complex Name<input type="text" name="c_name">
-        Zone Name<input type="text" name="c_zname">
-        Ward Name<input type="text" name="c_wname">
-        Number Of Shop<input type="text" name="cshop">
+        Complex ID<input type="text" name="cid">
+        Complex Name<input type="text" name="cname">
+        Zone Name<input type="text" name="czname">
+        Ward Name<input type="text" name="cwname">
         Number Of Hall<input type="text" name="chall">
         Number Of Room<input type="text" name="croom">
         Number Of Canteen<input type="text" name="ccanteen">

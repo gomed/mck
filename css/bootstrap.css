@@ -10,16 +10,6 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-/* for error */
-    .error
-    {
-      background-color:#800000;
-        line-height:25px;
-        color:#fff;
-        margin-bottom:3px;
-        margin-top:3px;
-    }
-    
 body {
   margin: 0;
 }
